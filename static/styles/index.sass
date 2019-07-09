@@ -1,0 +1,63 @@
+body
+  background-color: pink
+  margin: 0
+  h1
+    margin: 0
+
+header
+  background-color: purple
+  display: flex
+  flex-flow: nowrap column
+  div
+    display: flex
+    flex-flow: nowrap row
+    justify-content: space-between
+  nav
+    display: flex
+    flex-flow: nowrap column
+    a
+      background-color: lightblue
+      width: 100%
+      border-bottom: 1px solid orangered
+      text-align: center
+
+section
+  background-color: lime
+  border: 2px solid orangered
+  display: flex
+  flex-flow: wrap row
+  h2
+    width: 100%
+  div
+    display: flex
+    flex-flow: nowrap column
+    align-items: center
+    width: 100%
+
+.image
+  background-color: blue
+  width: 100%
+  height: 15rem
+
+#quote
+  form
+    display: flex
+    flex-flow: nowrap column
+
+@media(min-width: 50rem)
+  header
+    flex-flow: nowrap row
+    justify-content: space-between
+    button
+      display: none
+    nav
+      flex-flow: nowrap row
+
+  section
+    justify-content: space-around
+    div
+      width: auto
+
+  .image
+    width: 30rem
+    height: 30rem

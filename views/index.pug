@@ -9,7 +9,9 @@ html(lang="en")
 
   body
     header
-      h1 Logitec SA
+      div
+        h1 Logitec SA
+        button Menu
       nav
         a(href="#") About Us
         a(href="#") Our People
@@ -20,7 +22,7 @@ html(lang="en")
 
     section
       h2 About Us
-      div Image
+      div(class="image") Image
       ul
         li West Coast Based
         li Trusted Cargo Freighting
@@ -31,42 +33,46 @@ html(lang="en")
     section
       h2 Our People
       div
-        div Image
+        div(class="image") Image
         p Name
         p Title
       div
-        div Image
+        div(class="image") Image
         p Name
         p Title
 
     section
       h2 Our Fleet
       div
-        div Image
+        div(class="image") Image
         p Make and Model
       div
-        div Image
+        div(class="image") Image
         p Make and Model
       div
-        div Image
+        div(class="image") Image
         p Make and Model
 
     section
       h2 Our Work
       div
-        div Image
+        div(class="image") Image
         p Description
       div
-        div Image
+        div(class="image") Image
         p Description
 
-    section
+    section(id="quote")
       h2 Request a Quote
       form(action="/quote", method="post")
-        textarea(name="description", required)
-        input(type="email", name="email", required)
-        input(name="number")
-        input(type="checkbox", required)
+        label(for="description") Job Description
+        textarea(name="description", id="description", required)
+        label(for="email") Email Address
+        input(type="email", name="email", id="email", required)
+        label(for="number") Contact Number
+        input(name="number", id="number")
+        label(for="robot") I'm not a Robot
+        input(type="checkbox", id="robot", required)
         button(type="submit") Send Request
 
     section
