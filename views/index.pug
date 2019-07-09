@@ -8,4 +8,71 @@ html(lang="en")
     link(rel="stylesheet", href="/styles/index.css")
 
   body
-    h1 Logitec SA
+    header
+      h1 Logitec SA
+      nav
+        a(href="#") About Us
+        a(href="#") Our People
+        a(href="#") Our Fleet
+        a(href="#") Our Work
+        a(href="#") Request a Quote
+        a(href="#") Contact Us
+
+    section
+      h2 About Us
+      div Image
+      ul
+        li West Coast Based
+        li Trusted Cargo Freighting
+        li Anywhere in South Africa
+        li Level 1 BBBEE
+        li Live Tracking
+
+    section
+      h2 Our People
+      div
+        div Image
+        p Name
+        p Title
+      div
+        div Image
+        p Name
+        p Title
+
+    section
+      h2 Our Fleet
+      div
+        div Image
+        p Make and Model
+      div
+        div Image
+        p Make and Model
+      div
+        div Image
+        p Make and Model
+
+    section
+      h2 Our Work
+      div
+        div Image
+        p Description
+      div
+        div Image
+        p Description
+
+    section
+      h2 Request a Quote
+      form(action="/quote", method="post")
+        textarea(name="description", required)
+        input(type="email", name="email", required)
+        input(name="number")
+        input(type="checkbox", required)
+        button(type="submit") Send Request
+
+    section
+      h2 Contact Us
+      p Physical Address:
+      p Email Address:
+      p Office Number:
+      p WhatsApp Number:
+      p Office Hours:
