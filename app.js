@@ -15,4 +15,4 @@ app.get("/todo", (req, res) => {
   res.status(200).render("todo");
 });
 
-app.listen(8080, console.log("App Started.."));
+app.listen(process.env.PORT || 8080);
