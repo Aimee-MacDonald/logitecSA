@@ -11,8 +11,8 @@ html(lang="en")
     header
       div
         h1 Logitec SA
-        button Menu
-      nav
+        button(onclick="toggleMenu()") Menu
+      nav(id="menu")
         a(href="#") About Us
         a(href="#") Our People
         a(href="#") Our Fleet
@@ -82,3 +82,5 @@ html(lang="en")
       p Office Number:
       p WhatsApp Number:
       p Office Hours:
+
+  script(src="/scripts/index.js")
