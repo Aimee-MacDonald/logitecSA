@@ -5,13 +5,19 @@ body
     margin: 0
 
 header
-  background-color: purple
+  background-color: orangered
   display: flex
   flex-flow: nowrap column
+  width: 100%
+  min-height: 4rem
+  justify-content: center
+  position: fixed
+  z-index: 1
   div
     display: flex
     flex-flow: nowrap row
     justify-content: space-between
+    margin: 0 1rem
   nav
     display: flex
     flex-flow: nowrap column
@@ -21,9 +27,9 @@ header
       width: 100%
       border-bottom: 1px solid orangered
       text-align: center
+      padding: 0.5rem
 
 section
-  background-color: lime
   border: 2px solid orangered
   display: flex
   flex-flow: wrap row
@@ -34,6 +40,16 @@ section
     flex-flow: nowrap column
     align-items: center
     width: 100%
+
+#about
+  border: none
+  height: 100vh
+  background-color: none
+  .image
+    width: 100%
+    height: 100%
+    position: absolute
+    z-index: -1
 
 .image
   background-color: blue
@@ -49,11 +65,14 @@ section
   header
     flex-flow: nowrap row
     justify-content: space-between
+    align-items: center
     button
       display: none
     nav
       flex-flow: nowrap row
       height: auto !important
+      a
+        margin: 0.5rem
 
   section
     justify-content: space-around
