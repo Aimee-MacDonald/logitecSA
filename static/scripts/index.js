@@ -1,5 +1,6 @@
-var menuOpenFlag = false;
+var menuOpenFlag = true;
 var menu = document.getElementById("menu");
+toggleMenu();
 function toggleMenu(){
   menuOpenFlag = !menuOpenFlag;
 
