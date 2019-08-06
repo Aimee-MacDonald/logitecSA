@@ -10,3 +10,16 @@ function toggleMenu(){
     menu.style.height = "0";
   }
 }
+
+var lastScroll = 0;
+var header = document.getElementById("header");
+ document.onscroll = function(e){
+  var scrollDelta = window.scrollY - lastScroll;
+  lastScroll = window.scrollY;
+
+   if(scrollDelta > 0){
+    header.style.marginTop = "-5rem";
+  } else {
+    header.style.marginTop = "0";
+  }
+}
