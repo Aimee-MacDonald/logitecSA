@@ -4,7 +4,6 @@ body
     margin: 0
 
 header
-  background-color: lightgreen
   display: flex
   flex-flow: nowrap column
   width: 100%
@@ -12,22 +11,37 @@ header
   justify-content: center
   position: fixed
   z-index: 1
-  box-shadow: 0 0.2rem 0.5rem 0 black
   transition: 0.2s
+  background-color: white
+  box-shadow: 0 0.5rem 0.5rem 0 gray
   div
     display: flex
     flex-flow: nowrap row
     justify-content: space-between
-    margin: 0 1rem
+    margin-left: 0.5rem
+    margin-right: 0.5rem
   nav
     display: flex
     flex-flow: nowrap column
     overflow: hidden
     a
-      background-color: lightblue
       width: 100%
       text-align: center
-      padding: 0.5rem
+      display: flex
+      flex-flow: nowrap column
+      justify-content: space-around
+      align-items: center
+      text-decoration: none
+      p
+        margin: 0
+        color: black
+        font-weight: bold
+        font-size: 16pt
+      .selector
+        width: 0
+        height: 0.3rem
+        transition: 0.2s
+        background-color: blue
 
 section
   display: flex
@@ -108,6 +122,9 @@ footer
       height: auto !important
       a
         margin: 0.5rem
+        &:hover
+          .selector
+            width: 100%
 
   section
     justify-content: space-around

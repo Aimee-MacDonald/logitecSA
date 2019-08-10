@@ -18,7 +18,7 @@ var header = document.getElementById("header");
   lastScroll = window.scrollY;
 
    if(scrollDelta > 0){
-    header.style.marginTop = "-5rem";
+    header.style.marginTop = "-20rem";
   } else {
     header.style.marginTop = "0";
   }

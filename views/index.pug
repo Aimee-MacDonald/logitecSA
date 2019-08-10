@@ -13,16 +13,27 @@ html(lang="en")
         h1 Logitec SA
         button(onclick="toggleMenu()") Menu
       nav(id="menu")
-        a(href="#") About Us
-        a(href="#") Our People
-        a(href="#") Our Fleet
-        a(href="#") Our Work
-        a(href="#") Request a Quote
-        a(href="#") Contact Us
+        a(href="#")
+          p About Us
+          div(class="selector")
+        a(href="#")
+          p Our People
+          div(class="selector")
+        a(href="#")
+          p Our Fleet
+          div(class="selector")
+        a(href="#")
+          p Our Work
+          div(class="selector")
+        a(href="#")
+          p Request Quote
+          div(class="selector")
+        a(href="#")
+          p Contact Us
+          div(class="selector")
 
     section(id="about")
-      h2 About Us
-      div(class="image") Image
+      div(class="image")
       ul
         li West Coast Based
         li Trusted Cargo Freighting
@@ -34,15 +45,15 @@ html(lang="en")
       h2 Our People
       div
         div(class="image", id="p1")
-        p Ed
+        p Ed Drommond
         p Driver
       div
         div(class="image", id="p2")
-        p Edd
+        p Edd Marynn Pensky
         p Operations Supervisor
       div
         div(class="image", id="p3")
-        p Eddy
+        p Eddy Skipper Reese
         p Chief Executive Officer
 
     section
