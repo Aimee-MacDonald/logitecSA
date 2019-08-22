@@ -13,27 +13,28 @@ html(lang="en")
         h1 Logitec SA
         button(onclick="toggleMenu()") Menu
       nav(id="menu")
-        a(href="#")
+        a(href="#about")
           p About Us
           div(class="selector")
-        a(href="#")
+        a(href="#people")
           p Our People
           div(class="selector")
-        a(href="#")
+        a(href="#fleet")
           p Our Fleet
           div(class="selector")
-        a(href="#")
+        a(href="#work")
           p Our Work
           div(class="selector")
-        a(href="#")
+        a(href="#quote")
           p Request Quote
           div(class="selector")
-        a(href="#")
+        a(href="#contact")
           p Contact Us
           div(class="selector")
 
     section(id="about")
       div(class="image")
+      a(name="about")
       ul
         li West Coast Based
         li Trusted Cargo Freighting
@@ -42,7 +43,7 @@ html(lang="en")
         li Live Tracking
 
     section(id="people")
-      h2 Our People
+      a(name="people")
       div
         div(class="image", id="p1")
         p Ed Drommond
@@ -57,7 +58,7 @@ html(lang="en")
         p Chief Executive Officer
 
     section
-      h2 Our Fleet
+      a(name="fleet")
       div
         div(class="image") Image
         p Make and Model
@@ -69,7 +70,7 @@ html(lang="en")
         p Make and Model
 
     section
-      h2 Our Work
+      a(name="work")
       div
         div(class="image") Image
         p Description
@@ -78,7 +79,7 @@ html(lang="en")
         p Description
 
     section(id="quote")
-      h2 Request a Quote
+      a(name="quote")
       form(action="/quote", method="post")
         label(for="description") Job Description
         textarea(name="description", id="description", required)
@@ -91,7 +92,7 @@ html(lang="en")
         button(type="submit") Send Request
 
     footer
-      h2 Contact Us
+      a(name="contact")
       p Physical Address:
       p Email Address:
       p Office Number:
